@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rivera & Torres Abogados — Estudio Jurídico en Bogotá</title>
+  <meta name="description" content="Estudio jurídico en Bogotá especializado en derecho laboral, civil, comercial y de familia. Más de 15 años protegiendo sus derechos. Consulta inicial gratuita." />
+  <meta property="og:title" content="Rivera & Torres Abogados — Defensa con propósito" />
+  <meta property="og:description" content="Estudio jurídico en Bogotá. Derecho laboral, civil, comercial y de familia. Consulta inicial gratuita. 15 años de experiencia." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            onyx:   { DEFAULT: '#16161E', light: '#22222E', soft: '#2C2C3A' },
+            bronce: { DEFAULT: '#9A7B3C', light: '#C9A96E', xlight: '#F5EDD8' },
+            ivory:  { DEFAULT: '#FEFDFB', dark: '#F5F2EA', line: '#E0D9CE' },
+            parch:  { DEFAULT: '#8A7A64' },
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            body:    ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Rivera & Torres Abogados",
+    "description": "Estudio jurídico en Bogotá especializado en derecho laboral, civil, comercial y de familia.",
+    "telephone": "<!-- TODO: teléfono real -->",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "<!-- TODO: dirección real -->",
+      "addressLocality": "Bogotá",
+      "addressRegion": "Cundinamarca",
+      "addressCountry": "CO"
+    },
+    "priceRange": "$$$",
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"12:00"}
+    ]
+  }
+  </script>
+  <!-- TODO: insertar ID de medición GA4 del cliente -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script> -->
+</head>
+<body class="font-body bg-ivory text-onyx overflow-x-hidden">
+
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+  <!-- ══ HEADER ══ -->
+  <header id="header" class="fixed inset-x-0 top-0 z-50 transition-all duration-400">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Logo: monograma + nombre -->
+      <a href="#inicio" class="logo-rt" aria-label="Rivera & Torres Abogados — inicio">
+        <div class="logo-rt__mono" aria-hidden="true">
+          <span class="logo-rt__r">R</span><span class="logo-rt__amp">&</span><span class="logo-rt__t">T</span>
+        </div>
+        <div class="logo-rt__text">
+          <span class="logo-rt__name">Rivera & Torres</span>
+          <span class="logo-rt__tag">Abogados</span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-9" aria-label="Menú principal">
+        <a href="#nosotros"      class="nav-link">Nosotros</a>
+        <a href="#especialidades" class="nav-link">Áreas</a>
+        <a href="#proceso"       class="nav-link">Cómo trabajamos</a>
+        <a href="#agenda"        class="nav-link">Consulta</a>
+        <a href="#agenda"        class="btn-nav" id="cta-nav-consulta">Consulta gratuita</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-onyx border-t border-white/10" role="dialog" aria-modal="true">
+      <nav class="flex flex-col px-6 py-5 gap-1" aria-label="Menú móvil">
+        <a href="#nosotros"       class="mobile-link">Nosotros</a>
+        <a href="#especialidades" class="mobile-link">Áreas jurídicas</a>
+        <a href="#proceso"        class="mobile-link">Cómo trabajamos</a>
+        <a href="#agenda"         class="mobile-link">Consulta</a>
+        <a href="#resenas"        class="mobile-link">Clientes</a>
+        <a href="#agenda"         class="btn-nav mt-4 text-center block">Consulta gratuita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- ══ HERO ══ -->
+    <!-- Elemento signature: nombre del estudio en tipografía masiva (Cormorant) que define el espacio -->
+    <section id="inicio" class="hero-rt" aria-label="Portada">
+      <div class="hero-rt__bg" aria-hidden="true"></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10 w-full py-40 md:py-48">
+        <div class="hero-rt__grid">
+          <div class="hero-rt__left">
+            <p class="hero-eyebrow reveal-up">Estudio jurídico · Bogotá, Colombia</p>
+            <div class="hero-title-block reveal-up" style="animation-delay:.08s" aria-label="Rivera y Torres Abogados">
+              <p class="hero-rt__line1">Rivera</p>
+              <p class="hero-rt__line2"><span class="hero-rt__amp">&amp;</span> Torres</p>
+              <p class="hero-rt__line3">Abogados</p>
+            </div>
+            <div class="hero-rt__rule reveal-up" style="animation-delay:.2s" aria-hidden="true"></div>
+            <p class="hero-sub reveal-up" style="animation-delay:.28s">
+              Quince años defendiendo derechos en materia laboral, civil, comercial y de familia. Cada caso, tratado como si fuera el único.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-9 reveal-up" style="animation-delay:.38s">
+              <a href="#agenda" class="btn-hero-pri" id="cta-hero-consulta">Consulta inicial gratuita</a>
+              <a href="#especialidades" class="btn-hero-ghost">Ver áreas de práctica</a>
+            </div>
+          </div>
+          <div class="hero-rt__right reveal-right" style="animation-delay:.18s">
+            <div class="hero-rt__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800&q=85&auto=format&fit=crop&crop=center"
+                alt="Biblioteca jurídica del estudio Rivera & Torres Abogados"
+                class="hero-rt__img"
+                width="800" height="1000"
+              />
+              <div class="hero-rt__img-badge">
+                <p class="font-display text-3xl font-semibold text-ivory leading-none">15</p>
+                <p class="text-xs font-semibold text-ivory/60 uppercase tracking-widest mt-1">años de<br/>experiencia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Métricas -->
+        <div class="hero-metrics reveal-up" style="animation-delay:.48s">
+          <div class="metric">
+            <p class="metric__n"><span class="count-up" data-target="900">0</span>+</p>
+            <p class="metric__l">Casos resueltos</p>
+          </div>
+          <span class="metric__sep" aria-hidden="true"></span>
+          <div class="metric">
+            <p class="metric__n"><span class="count-up" data-target="15">0</span></p>
+            <p class="metric__l">Años de trayectoria</p>
+          </div>
+          <span class="metric__sep" aria-hidden="true"></span>
+          <div class="metric">
+            <p class="metric__n"><span class="count-up" data-target="4">0</span></p>
+            <p class="metric__l">Áreas de práctica</p>
+          </div>
+          <span class="metric__sep" aria-hidden="true"></span>
+          <div class="metric">
+            <p class="metric__n metric__n--small">Consulta</p>
+            <p class="metric__l">Inicial gratuita</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ NOSOTROS ══ -->
+    <section id="nosotros" class="py-28 bg-ivory-dark scroll-mt-20" aria-label="Sobre Rivera & Torres">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div class="reveal-left">
+            <span class="tag-label">El estudio</span>
+            <h2 class="section-heading mt-3 mb-6">
+              La ley como<br />
+              <em>herramienta de justicia,</em><br />
+              no de poder.
+            </h2>
+            <p class="text-parch leading-relaxed mb-5">
+              Rivera & Torres nació en 2009 con la convicción de que una asesoría jurídica de calidad no debería ser exclusiva de las grandes corporaciones. Somos un equipo de abogados especializados que combina rigor técnico con un trato cercano y transparente.
+            </p>
+            <p class="text-parch leading-relaxed mb-10">
+              Creemos que un buen abogado no solo conoce la ley: sabe explicarla con claridad, anticipar los riesgos y buscar la solución más eficiente para cada cliente. Por eso nuestra primera consulta siempre es gratuita — para que puedas tomar decisiones informadas desde el primer momento.
+            </p>
+            <div class="valores-grid">
+              <div class="valor">
+                <p class="valor__title">Transparencia</p>
+                <p class="valor__desc">Explicamos cada paso del proceso en términos claros, sin tecnicismos innecesarios.</p>
+              </div>
+              <div class="valor">
+                <p class="valor__title">Rigor</p>
+                <p class="valor__desc">Cada caso es investigado con la profundidad que merece, sin atajos.</p>
+              </div>
+              <div class="valor">
+                <p class="valor__title">Compromiso</p>
+                <p class="valor__desc">Tratamos su caso con la misma dedicación que esperaríamos para nosotros mismos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="reveal-right">
+            <div class="team-rt-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop&crop=face"
+                alt="Dr. Rivera — Socio fundador de Rivera & Torres Abogados"
+                loading="lazy" width="600" height="700"
+                class="team-rt-img"
+              />
+              <div class="team-rt-caption">
+                <p class="team-rt-caption__name font-display"><!-- TODO --> Dr. Alejandro Rivera</p>
+                <p class="team-rt-caption__role">Socio fundador · Derecho Laboral y Civil</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ESPECIALIDADES ══ -->
+    <section id="especialidades" class="py-28 bg-onyx scroll-mt-20" aria-label="Áreas de práctica jurídica">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16 reveal-up">
+          <span class="tag-label text-bronce-light">Áreas de práctica</span>
+          <h2 class="font-display text-4xl md:text-5xl text-ivory mt-3 leading-tight font-light">
+            En qué le podemos <em>ayudar</em>
+          </h2>
+        </div>
+        <div class="esp-grid">
+
+          <article class="esp-card reveal-up" tabindex="0">
+            <div class="esp-card__num" aria-hidden="true">01</div>
+            <h3 class="esp-card__title">Derecho laboral</h3>
+            <p class="esp-card__desc">Contratos laborales, despidos injustos, liquidaciones, acoso laboral, tutelas laborales y negociación colectiva. Asesoría a empleados y empresas.</p>
+            <ul class="esp-card__items">
+              <li>Terminación de contratos</li>
+              <li>Acreencias laborales</li>
+              <li>Conciliación y litigio</li>
+            </ul>
+            <div class="esp-card__reveal" aria-hidden="true">Ver más →</div>
+          </article>
+
+          <article class="esp-card esp-card--featured reveal-up" style="animation-delay:.1s" tabindex="0">
+            <div class="esp-card__badge">Más consultado</div>
+            <div class="esp-card__num text-bronce-light" aria-hidden="true">02</div>
+            <h3 class="esp-card__title">Derecho civil</h3>
+            <p class="esp-card__desc">Contratos civiles, sucesiones y herencias, responsabilidad civil, deudas, hipotecas y bienes raíces. Protección de su patrimonio.</p>
+            <ul class="esp-card__items">
+              <li>Sucesiones y herencias</li>
+              <li>Contratos e incumplimientos</li>
+              <li>Procesos ejecutivos</li>
+            </ul>
+            <div class="esp-card__reveal" aria-hidden="true">Ver más →</div>
+          </article>
+
+          <article class="esp-card reveal-up" style="animation-delay:.2s" tabindex="0">
+            <div class="esp-card__num" aria-hidden="true">03</div>
+            <h3 class="esp-card__title">Derecho comercial</h3>
+            <p class="esp-card__desc">Constitución de empresas, contratos mercantiles, defensa ante la SIC, propiedad intelectual y asesoría corporativa permanente.</p>
+            <ul class="esp-card__items">
+              <li>Contratos mercantiles</li>
+              <li>Constitución societaria</li>
+              <li>Asesoría empresarial</li>
+            </ul>
+            <div class="esp-card__reveal" aria-hidden="true">Ver más →</div>
+          </article>
+
+          <article class="esp-card reveal-up" style="animation-delay:.15s" tabindex="0">
+            <div class="esp-card__num" aria-hidden="true">04</div>
+            <h3 class="esp-card__title">Derecho de familia</h3>
+            <p class="esp-card__desc">Divorcios y separaciones, custodia y alimentos, adopciones, capitulaciones matrimoniales y uniones maritales de hecho.</p>
+            <ul class="esp-card__items">
+              <li>Custodia y alimentos</li>
+              <li>Divorcios y separaciones</li>
+              <li>Capitulaciones</li>
+            </ul>
+            <div class="esp-card__reveal" aria-hidden="true">Ver más →</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROCESO ══ -->
+    <section id="proceso" class="py-28 bg-ivory scroll-mt-20" aria-label="Cómo trabajamos">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 reveal-up">
+          <span class="tag-label">Nuestro proceso</span>
+          <h2 class="section-heading mt-3">Cómo trabajamos</h2>
+          <p class="text-parch mt-4 max-w-lg mx-auto">Sin sorpresas, sin letras pequeñas. Así es nuestro proceso desde la primera llamada hasta la resolución de su caso.</p>
+        </div>
+        <div class="proceso-steps">
+          <div class="proceso-step reveal-up">
+            <div class="proceso-step__num" aria-hidden="true">01</div>
+            <div class="proceso-step__line" aria-hidden="true"></div>
+            <h3 class="proceso-step__title">Consulta inicial gratuita</h3>
+            <p class="proceso-step__desc">Agendas una consulta de 30 minutos sin costo. Nos cuentas el caso y evaluamos si podemos ayudarte y cómo.</p>
+          </div>
+          <div class="proceso-step reveal-up" style="animation-delay:.1s">
+            <div class="proceso-step__num" aria-hidden="true">02</div>
+            <div class="proceso-step__line" aria-hidden="true"></div>
+            <h3 class="proceso-step__title">Diagnóstico y estrategia</h3>
+            <p class="proceso-step__desc">Analizamos la situación con detalle, identificamos los riesgos y te presentamos una estrategia clara con tiempos y costos estimados.</p>
+          </div>
+          <div class="proceso-step reveal-up" style="animation-delay:.2s">
+            <div class="proceso-step__num" aria-hidden="true">03</div>
+            <div class="proceso-step__line proceso-step__line--last" aria-hidden="true"></div>
+            <h3 class="proceso-step__title">Representación y resolución</h3>
+            <p class="proceso-step__desc">Gestionamos su caso de principio a fin: negociación, conciliación o litigio. Informamos cada avance y tomamos decisiones contigo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ AGENDA / CONSULTA ══ -->
+    <section id="agenda" class="py-28 bg-onyx-light scroll-mt-20" aria-label="Agendar consulta jurídica">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="text-center mb-12 reveal-up">
+          <span class="tag-label text-bronce-light">Consulta jurídica</span>
+          <h2 class="font-display text-4xl md:text-5xl text-ivory mt-3 mb-3 leading-tight font-light">
+            La primera consulta<br /><em>es gratuita</em>
+          </h2>
+          <p class="text-ivory/50 text-base">
+            Reserve 30 minutos sin costo para evaluar su caso. Sin compromisos.<br />
+            <span class="text-ivory/30 text-sm">Lun–Vie 8:00–17:00 · Sáb 9:00–12:00 · Dom cerrado</span>
+          </p>
+        </div>
+
+        <div class="agenda-card reveal-up">
+
+          <!-- Paso 1: Tipo de consulta -->
+          <div class="agenda-step" id="step-servicio">
+            <label class="step-label" for="sel-servicio">1 — Tipo de asesoría</label>
+            <select id="sel-servicio" class="agenda-select">
+              <option value="">— Selecciona el área jurídica —</option>
+              <option value="30|Consulta inicial gratuita">Consulta inicial gratuita (30 min)</option>
+              <option value="60|Asesoría derecho laboral">Asesoría derecho laboral (60 min)</option>
+              <option value="60|Asesoría derecho civil">Asesoría derecho civil (60 min)</option>
+              <option value="60|Asesoría derecho comercial">Asesoría derecho comercial (60 min)</option>
+              <option value="60|Asesoría derecho de familia">Asesoría derecho de familia (60 min)</option>
+            </select>
+          </div>
+
+          <!-- Paso 2: Fecha -->
+          <div class="agenda-step hidden" id="step-fecha">
+            <label class="step-label" for="sel-fecha">2 — Fecha de la consulta</label>
+            <input type="date" id="sel-fecha" class="agenda-input" />
+            <p class="step-hint">Atendemos Lun–Vie y Sáb por la mañana. Domingos cerrado.</p>
+          </div>
+
+          <!-- Paso 3: Slots -->
+          <div class="agenda-step hidden" id="step-slots">
+            <p class="step-label">3 — Horario disponible</p>
+            <div id="slots-grid" class="slots-grid" role="group" aria-label="Horarios disponibles"></div>
+            <p id="slots-empty" class="step-hint text-bronce-light hidden">No hay horarios disponibles ese día. Elige otra fecha.</p>
+          </div>
+
+          <!-- Paso 4: Formulario -->
+          <div class="agenda-step hidden" id="step-datos">
+            <p class="step-label">4 — Sus datos de contacto</p>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="ag-nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="ag-nombre" placeholder="Su nombre completo" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="ag-email">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="ag-email" placeholder="correo@ejemplo.com" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="ag-tel">Teléfono de contacto <span class="req" aria-hidden="true">*</span></label>
+                <input type="tel" id="ag-tel" placeholder="300 000 0000" autocomplete="tel" required />
+              </div>
+              <div class="form-field form-field--full">
+                <label for="ag-caso">Describa brevemente su situación <span class="opt">(opcional)</span></label>
+                <input type="text" id="ag-caso" placeholder="Ej: despido injustificado, disputa contractual, separación..." />
+              </div>
+            </div>
+            <p id="form-error" class="form-error hidden" role="alert"></p>
+            <button type="button" id="btn-confirmar" class="btn-agenda-submit" id="cta-agenda-submit">
+              Reservar consulta gratuita
+            </button>
+            <p class="form-legal">La información suministrada es confidencial y protegida por el secreto profesional.</p>
+          </div>
+
+          <!-- Confirmación -->
+          <div id="step-confirm" class="agenda-confirm hidden" role="status" aria-live="polite">
+            <div class="confirm-check" aria-hidden="true">
+              <svg class="w-8 h-8 text-onyx" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <h3 class="confirm-title font-display">Consulta reservada</h3>
+            <p id="confirm-resumen" class="confirm-msg"></p>
+            <p class="confirm-demo"><strong>(Demo)</strong> En producción recibiría un correo de confirmación con los detalles de la consulta y el enlace de videollamada si aplica.</p>
+            <!-- PRODUCCIÓN: fetch('/api/consultas', { method:'POST', ... }) -->
+            <button type="button" id="btn-reset" class="btn-reset">Reservar otra consulta</button>
+          </div>
+
+          <!-- Mini-resumen -->
+          <div id="agenda-resumen" class="resumen-bar hidden">
+            <span id="rsm-svc"   class="resumen-pill"></span>
+            <span id="rsm-fecha" class="resumen-pill"></span>
+            <span id="rsm-hora"  class="resumen-pill"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ RESEÑAS ══ -->
+    <section id="resenas" class="py-28 bg-ivory-dark scroll-mt-20" aria-label="Testimonios de clientes">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 reveal-up">
+          <span class="tag-label">Clientes</span>
+          <h2 class="section-heading mt-3">Lo que dicen<br /><em class="not-italic text-bronce">quienes confiaron en nosotros</em></h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <blockquote class="review-rt reveal-up">
+            <div class="review-rt__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="review-rt__text">"Pensé que había perdido todo después del despido. El equipo de Rivera & Torres no solo recuperó lo que me debían, sino que lo hicieron con una celeridad que no esperaba. Profesionalismo impecable."</p>
+            <footer class="review-rt__author">— <!-- TODO --> Eduardo V. · Caso laboral</footer>
+          </blockquote>
+          <blockquote class="review-rt review-rt--featured reveal-up" style="animation-delay:.1s">
+            <div class="review-rt__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="review-rt__text">"El proceso de divorcio fue uno de los momentos más difíciles de mi vida. La doctora Torres lo manejó con una sensibilidad y eficiencia que me dieron tranquilidad en cada etapa. No podría recomendar mejor."</p>
+            <footer class="review-rt__author">— <!-- TODO --> Claudia M. · Derecho de familia</footer>
+          </blockquote>
+          <blockquote class="review-rt reveal-up" style="animation-delay:.2s">
+            <div class="review-rt__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="review-rt__text">"Como empresa pequeña no sabíamos que teníamos derechos que nos estaban vulnerando. La asesoría comercial nos ahorró tiempo, dinero y, sobre todo, dolores de cabeza."</p>
+            <footer class="review-rt__author">— <!-- TODO --> Finca Raíz Nórdica S.A.S. · Derecho comercial</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACTO ══ -->
+    <section id="contacto" class="py-28 bg-ivory scroll-mt-20" aria-label="Contacto y ubicación">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div class="reveal-left">
+            <span class="tag-label">Encuéntrenos</span>
+            <h2 class="section-heading mt-3 mb-10">Estamos en Bogotá.<br /><span class="text-bronce">Hablemos.</span></h2>
+            <div class="space-y-7">
+              <div class="info-row">
+                <div class="info-icon"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+                <div><p class="font-semibold text-onyx mb-0.5">Dirección</p><p class="text-parch"><!-- TODO: dirección real -->, Bogotá, Colombia</p></div>
+              </div>
+              <div class="info-row">
+                <div class="info-icon"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+                <div>
+                  <p class="font-semibold text-onyx mb-1">Horario de atención</p>
+                  <p class="text-parch">Lunes a Viernes: 8:00 – 17:00</p>
+                  <p class="text-parch">Sábados: 9:00 – 12:00</p>
+                  <p class="text-parch">Domingos: Cerrado</p>
+                </div>
+              </div>
+              <div class="info-row">
+                <div class="info-icon"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+                <div><p class="font-semibold text-onyx mb-0.5">Teléfono</p><a href="tel:+57XXXXXXXXXX" class="text-bronce font-medium hover:text-bronce-light transition-colors" id="cta-tel"><!-- TODO: número real --></a></div>
+              </div>
+            </div>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20vengo%20de%20la%20web%20de%20Rivera%20%26%20Torres%20Abogados%20y%20quisiera%20informaci%C3%B3n" class="btn-whatsapp" id="cta-whatsapp-contacto" aria-label="Escribir por WhatsApp">
+                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Escribir por WhatsApp
+              </a>
+              <a href="tel:+57XXXXXXXXXX" class="btn-outline" id="cta-llamar">Llamar ahora</a>
+            </div>
+          </div>
+          <div class="reveal-right">
+            <div class="map-placeholder" role="img" aria-label="Mapa de ubicación pendiente">
+              <svg class="w-14 h-14 text-onyx/15 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              <p class="text-onyx/25 text-sm"><!-- TODO: iframe de Google Maps --></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="bg-onyx py-14 px-6" role="contentinfo">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <div class="md:col-span-2">
+          <p class="font-display text-3xl text-ivory font-light">Rivera <span class="text-bronce-light">&amp;</span> Torres<br /><span class="text-lg text-ivory/50 font-light tracking-widest uppercase" style="font-family:inherit;letter-spacing:.2em;font-size:.75rem">Abogados</span></p>
+          <p class="text-ivory/35 text-sm max-w-xs leading-relaxed mt-4">Defensa jurídica con propósito. Bogotá, Colombia.</p>
+        </div>
+        <div>
+          <p class="text-ivory/50 text-xs uppercase tracking-widest font-semibold mb-4">Horario</p>
+          <p class="text-ivory/35 text-sm">Lun – Vie: 8:00 – 17:00</p>
+          <p class="text-ivory/35 text-sm">Sáb: 9:00 – 12:00</p>
+          <p class="text-ivory/35 text-sm">Dom: Cerrado</p>
+        </div>
+        <div>
+          <p class="text-ivory/50 text-xs uppercase tracking-widest font-semibold mb-4">Áreas</p>
+          <p class="text-ivory/35 text-sm">Derecho laboral</p>
+          <p class="text-ivory/35 text-sm">Derecho civil</p>
+          <p class="text-ivory/35 text-sm">Derecho comercial</p>
+          <p class="text-ivory/35 text-sm">Derecho de familia</p>
+        </div>
+      </div>
+      <div class="border-t border-white/8 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-ivory/20 text-xs">
+        <p>© 2024 Rivera & Torres Abogados. Todos los derechos reservados.</p>
+        <p>DEMO · <!-- TODO: datos reales del cliente --></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20vengo%20de%20la%20web%20de%20Rivera%20%26%20Torres%20Abogados" class="whatsapp-fab" id="cta-whatsapp-fab" aria-label="Abrir WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
